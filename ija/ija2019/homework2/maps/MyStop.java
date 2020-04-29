@@ -47,7 +47,7 @@ public class MyStop implements Stop {
         if ((obj == null) || (obj.getClass() != this.getClass())) {
             return false;
         }
-        return ((Stop) obj).getId().equals(this.getId());
+        return ((Stop) obj).getId() == this.getId();
     }
 
     @Override
